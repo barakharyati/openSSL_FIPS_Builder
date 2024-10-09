@@ -1,0 +1,26 @@
+testing FIPS Provider Modules Version:openssl-3.0.9
+----openssl version -a----
+OpenSSL 3.0.9 30 May 2023 (Library: OpenSSL 3.0.9 30 May 2023)
+built on: Wed Oct  9 22:49:02 2024 UTC
+platform: linux-x86_64
+options:  bn(64,64)
+compiler: gcc -fPIC -pthread -m64 -Wa,--noexecstack -Wall -O3 -DOPENSSL_USE_NODELETE -DL_ENDIAN -DOPENSSL_PIC -DOPENSSL_BUILDING_OPENSSL -DNDEBUG
+OPENSSLDIR: "/usr/local/ssl"
+ENGINESDIR: "/usr/local/lib64/engines-3"
+MODULESDIR: "/usr/local/lib64/ossl-modules"
+Seeding source: os-specific
+CPUINFO: OPENSSL_ia32cap=0xfeda32235f8bffff:0x405f46f1bf2fb9
+----openssl list -providers----
+Providers:
+  fips
+    name: OpenSSL FIPS Provider
+    version: 3.0.9
+    status: active
+Checking if FIPS mode is active:
+Sucessesd FIPS mode providers returned
+Testing SHA256 is working
+SHA2-256(/etc/hosts)= f969610b9f4ed5f29917185f0dcf4a611dc618e9918a61504baf5dbb7b187a1a
+SHA256 succeeded OpenSSL is working
+Testing MD5 hash (should fail in FIPS mode):
+MD5 failed (FIPS mode is active)
+all tests complete successfully
