@@ -23,5 +23,5 @@ chmod +x ./Build_openssl_provider/build_fips_provider.sh
 cp ./Build_openssl_provider/output/fips.so ./Build_openssl_app_with_FIPS_Provider/input/fips.so
 
 #build open ssl app with fips provider
-
+chmod +x ./Build_openssl_app_with_FIPS_Provider/build_openssl_FIPS_app.sh
 ./Build_openssl_app_with_FIPS_Provider/build_openssl_FIPS_app.sh
