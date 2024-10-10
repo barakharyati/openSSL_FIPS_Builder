@@ -2,6 +2,11 @@
 
 #add the required OpenSSL Version
 
+
+mkdir Build_openssl_app_with_FIPS_Provider/input
+mkdir Build_openssl_app_with_FIPS_Provider/output
+mkdir Build_openssl_provider/output
+
 #open ssl fips validated version - you can check last fips validated version here https://openssl-library.org/source/
 export OPENSSL_FIPS_VERSION=openssl-3.0.9
 #open ssl application version you should use select supported version with you openssl version
