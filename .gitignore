@@ -1,3 +1,4 @@
 Build_openssl_provider/output/
 Build_openssl_app_with_FIPS_Provider/input/
 Build_openssl_app_with_FIPS_Provider/output/
+.vscode/
