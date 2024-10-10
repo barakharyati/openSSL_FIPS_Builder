@@ -1,4 +1,4 @@
-# OpenSSL App with FIPS Provider
+# OpenSSL FIPS App builder
 
 This script manages the setup and compilation process for building an OpenSSL application with FIPS (Federal Information Processing Standards) provider support inside a Docker environment. It compiles the FIPS module, configures OpenSSL to work in FIPS mode, and installs it on a separate Debian container.
 
