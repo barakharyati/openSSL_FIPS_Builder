@@ -1,6 +1,6 @@
 #use Debian bookworm
 
-FROM debian:bookworm-20240926
+FROM debian:12.13
 
 ARG OPENSSL_APP_VERSION=openssl-3.3.2
 ARG OPENSSL_FIPS_VERSION=openssl-3.0.9
